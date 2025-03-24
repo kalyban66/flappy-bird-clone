@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="uk">
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Clone</title>
     <style>
-      body {
-        padding-top: 66px;
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        background-color: #f0f0f0;
-      }
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
     </style>
-  </head>
-  <body>
-  </body>
+</head>
+<body>
+    <div id="game-container"></div>
+
+    <!-- Підключаємо Phaser через CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+
+    <!-- Головний скрипт -->
+    <script type="module" src="src/index.js"></script>
+</body>
 </html>
